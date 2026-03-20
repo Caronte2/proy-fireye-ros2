@@ -1,6 +1,0 @@
-source;share/fireye_world/hook/cmake_prefix_path.dsv
-source;share/fireye_world/hook/cmake_prefix_path.sh
-source;share/fireye_world/local_setup.bash
-source;share/fireye_world/local_setup.dsv
-source;share/fireye_world/local_setup.sh
-source;share/fireye_world/local_setup.zsh
