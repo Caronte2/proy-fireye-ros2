@@ -1,0 +1,18 @@
+# Carpetas de compilación de ROS 2 (Colcon)
+build/
+install/
+log/
+
+# Archivos temporales de Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Archivos temporales del sistema operativo
+.DS_Store
+*~
+*.swp
+
+# Logs y caché de Gazebo / ROS
+.ros/
+.gazebo/
