@@ -1,0 +1,4 @@
+source;share/proy_fireye/local_setup.bash
+source;share/proy_fireye/local_setup.dsv
+source;share/proy_fireye/local_setup.sh
+source;share/proy_fireye/local_setup.zsh

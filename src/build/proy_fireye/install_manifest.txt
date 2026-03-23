@@ -1,0 +1,15 @@
+/home/grey/Documentos/GitHub/proy-fireye-ros2/src/install/proy_fireye/share/ament_index/resource_index/package_run_dependencies/proy_fireye
+/home/grey/Documentos/GitHub/proy-fireye-ros2/src/install/proy_fireye/share/ament_index/resource_index/parent_prefix_path/proy_fireye
+/home/grey/Documentos/GitHub/proy-fireye-ros2/src/install/proy_fireye/share/proy_fireye/environment/ament_prefix_path.sh
+/home/grey/Documentos/GitHub/proy-fireye-ros2/src/install/proy_fireye/share/proy_fireye/environment/ament_prefix_path.dsv
+/home/grey/Documentos/GitHub/proy-fireye-ros2/src/install/proy_fireye/share/proy_fireye/environment/path.sh
+/home/grey/Documentos/GitHub/proy-fireye-ros2/src/install/proy_fireye/share/proy_fireye/environment/path.dsv
+/home/grey/Documentos/GitHub/proy-fireye-ros2/src/install/proy_fireye/share/proy_fireye/local_setup.bash
+/home/grey/Documentos/GitHub/proy-fireye-ros2/src/install/proy_fireye/share/proy_fireye/local_setup.sh
+/home/grey/Documentos/GitHub/proy-fireye-ros2/src/install/proy_fireye/share/proy_fireye/local_setup.zsh
+/home/grey/Documentos/GitHub/proy-fireye-ros2/src/install/proy_fireye/share/proy_fireye/local_setup.dsv
+/home/grey/Documentos/GitHub/proy-fireye-ros2/src/install/proy_fireye/share/proy_fireye/package.dsv
+/home/grey/Documentos/GitHub/proy-fireye-ros2/src/install/proy_fireye/share/ament_index/resource_index/packages/proy_fireye
+/home/grey/Documentos/GitHub/proy-fireye-ros2/src/install/proy_fireye/share/proy_fireye/cmake/proy_fireyeConfig.cmake
+/home/grey/Documentos/GitHub/proy-fireye-ros2/src/install/proy_fireye/share/proy_fireye/cmake/proy_fireyeConfig-version.cmake
+/home/grey/Documentos/GitHub/proy-fireye-ros2/src/install/proy_fireye/share/proy_fireye/package.xml

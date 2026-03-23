@@ -1,0 +1,175 @@
+[0.104s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.104s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=22, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x78e609d0d940>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x78e609e97680>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x78e609e97680>>)
+[0.143s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.144s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.144s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.144s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.144s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.144s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.144s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/grey/Documentos/GitHub/proy-fireye-ros2/src'
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(proy-fireye) by extensions ['ignore', 'ignore_ament_install']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(proy-fireye) by extension 'ignore'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(proy-fireye) by extension 'ignore_ament_install'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(proy-fireye) by extensions ['colcon_pkg']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(proy-fireye) by extension 'colcon_pkg'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(proy-fireye) by extensions ['colcon_meta']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(proy-fireye) by extension 'colcon_meta'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(proy-fireye) by extensions ['ros']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(proy-fireye) by extension 'ros'
+[0.175s] DEBUG:colcon.colcon_core.package_identification:Package 'proy-fireye' with type 'ros.ament_cmake' and name 'proy_fireye'
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(proy-fireye_world) by extensions ['ignore', 'ignore_ament_install']
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(proy-fireye_world) by extension 'ignore'
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(proy-fireye_world) by extension 'ignore_ament_install'
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(proy-fireye_world) by extensions ['colcon_pkg']
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(proy-fireye_world) by extension 'colcon_pkg'
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(proy-fireye_world) by extensions ['colcon_meta']
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(proy-fireye_world) by extension 'colcon_meta'
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(proy-fireye_world) by extensions ['ros']
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(proy-fireye_world) by extension 'ros'
+[0.176s] DEBUG:colcon.colcon_core.package_identification:Package 'proy-fireye_world' with type 'ros.ament_cmake' and name 'fireye_world'
+[0.176s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.176s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.176s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.176s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.176s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.195s] Level 5:colcon.colcon_core.verb:set package 'fireye_world' build argument 'cmake_args' from command line to 'None'
+[0.195s] Level 5:colcon.colcon_core.verb:set package 'fireye_world' build argument 'cmake_target' from command line to 'None'
+[0.195s] Level 5:colcon.colcon_core.verb:set package 'fireye_world' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.195s] Level 5:colcon.colcon_core.verb:set package 'fireye_world' build argument 'cmake_clean_cache' from command line to 'False'
+[0.195s] Level 5:colcon.colcon_core.verb:set package 'fireye_world' build argument 'cmake_clean_first' from command line to 'False'
+[0.195s] Level 5:colcon.colcon_core.verb:set package 'fireye_world' build argument 'cmake_force_configure' from command line to 'False'
+[0.195s] Level 5:colcon.colcon_core.verb:set package 'fireye_world' build argument 'ament_cmake_args' from command line to 'None'
+[0.195s] Level 5:colcon.colcon_core.verb:set package 'fireye_world' build argument 'catkin_cmake_args' from command line to 'None'
+[0.195s] Level 5:colcon.colcon_core.verb:set package 'fireye_world' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.195s] DEBUG:colcon.colcon_core.verb:Building package 'fireye_world' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/grey/Documentos/GitHub/proy-fireye-ros2/src/build/fireye_world', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/grey/Documentos/GitHub/proy-fireye-ros2/src/install/fireye_world', 'merge_install': False, 'path': '/home/grey/Documentos/GitHub/proy-fireye-ros2/src/proy-fireye_world', 'symlink_install': False, 'test_result_base': None}
+[0.195s] Level 5:colcon.colcon_core.verb:set package 'proy_fireye' build argument 'cmake_args' from command line to 'None'
+[0.195s] Level 5:colcon.colcon_core.verb:set package 'proy_fireye' build argument 'cmake_target' from command line to 'None'
+[0.195s] Level 5:colcon.colcon_core.verb:set package 'proy_fireye' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.195s] Level 5:colcon.colcon_core.verb:set package 'proy_fireye' build argument 'cmake_clean_cache' from command line to 'False'
+[0.195s] Level 5:colcon.colcon_core.verb:set package 'proy_fireye' build argument 'cmake_clean_first' from command line to 'False'
+[0.195s] Level 5:colcon.colcon_core.verb:set package 'proy_fireye' build argument 'cmake_force_configure' from command line to 'False'
+[0.196s] Level 5:colcon.colcon_core.verb:set package 'proy_fireye' build argument 'ament_cmake_args' from command line to 'None'
+[0.196s] Level 5:colcon.colcon_core.verb:set package 'proy_fireye' build argument 'catkin_cmake_args' from command line to 'None'
+[0.196s] Level 5:colcon.colcon_core.verb:set package 'proy_fireye' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.196s] DEBUG:colcon.colcon_core.verb:Building package 'proy_fireye' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/grey/Documentos/GitHub/proy-fireye-ros2/src/build/proy_fireye', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/grey/Documentos/GitHub/proy-fireye-ros2/src/install/proy_fireye', 'merge_install': False, 'path': '/home/grey/Documentos/GitHub/proy-fireye-ros2/src/proy-fireye', 'symlink_install': False, 'test_result_base': None}
+[0.196s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.197s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.197s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/grey/Documentos/GitHub/proy-fireye-ros2/src/proy-fireye_world' with build type 'ament_cmake'
+[0.197s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/grey/Documentos/GitHub/proy-fireye-ros2/src/proy-fireye_world'
+[0.199s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.199s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.208s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/grey/Documentos/GitHub/proy-fireye-ros2/src/proy-fireye' with build type 'ament_cmake'
+[0.208s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/grey/Documentos/GitHub/proy-fireye-ros2/src/proy-fireye'
+[0.208s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.221s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/grey/Documentos/GitHub/proy-fireye-ros2/src/build/fireye_world': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/grey/turtlebot3_ws/install/show_msg:/home/grey/turtlebot3_ws/install/my_first_subscriber:/home/grey/turtlebot3_ws/install/my_first_service:/home/grey/turtlebot3_ws/install/my_first_publisher:/home/grey/turtlebot3_ws/install/my_first_node:/home/grey/turtlebot3_ws/install/my_first_action:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/grey/Documentos/GitHub/proy-fireye-ros2/src/proy-fireye_world -DCMAKE_INSTALL_PREFIX=/home/grey/Documentos/GitHub/proy-fireye-ros2/src/install/fireye_world
+[0.225s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/grey/Documentos/GitHub/proy-fireye-ros2/src/build/proy_fireye': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/grey/turtlebot3_ws/install/show_msg:/home/grey/turtlebot3_ws/install/my_first_subscriber:/home/grey/turtlebot3_ws/install/my_first_service:/home/grey/turtlebot3_ws/install/my_first_publisher:/home/grey/turtlebot3_ws/install/my_first_node:/home/grey/turtlebot3_ws/install/my_first_action:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/grey/Documentos/GitHub/proy-fireye-ros2/src/proy-fireye -DCMAKE_INSTALL_PREFIX=/home/grey/Documentos/GitHub/proy-fireye-ros2/src/install/proy_fireye
+[1.123s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/grey/Documentos/GitHub/proy-fireye-ros2/src/build/proy_fireye' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/grey/turtlebot3_ws/install/show_msg:/home/grey/turtlebot3_ws/install/my_first_subscriber:/home/grey/turtlebot3_ws/install/my_first_service:/home/grey/turtlebot3_ws/install/my_first_publisher:/home/grey/turtlebot3_ws/install/my_first_node:/home/grey/turtlebot3_ws/install/my_first_action:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/grey/Documentos/GitHub/proy-fireye-ros2/src/proy-fireye -DCMAKE_INSTALL_PREFIX=/home/grey/Documentos/GitHub/proy-fireye-ros2/src/install/proy_fireye
+[1.125s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/grey/Documentos/GitHub/proy-fireye-ros2/src/build/proy_fireye': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/grey/turtlebot3_ws/install/show_msg:/home/grey/turtlebot3_ws/install/my_first_subscriber:/home/grey/turtlebot3_ws/install/my_first_service:/home/grey/turtlebot3_ws/install/my_first_publisher:/home/grey/turtlebot3_ws/install/my_first_node:/home/grey/turtlebot3_ws/install/my_first_action:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/grey/Documentos/GitHub/proy-fireye-ros2/src/build/proy_fireye -- -j22 -l22
+[1.171s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/grey/Documentos/GitHub/proy-fireye-ros2/src/build/proy_fireye' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/grey/turtlebot3_ws/install/show_msg:/home/grey/turtlebot3_ws/install/my_first_subscriber:/home/grey/turtlebot3_ws/install/my_first_service:/home/grey/turtlebot3_ws/install/my_first_publisher:/home/grey/turtlebot3_ws/install/my_first_node:/home/grey/turtlebot3_ws/install/my_first_action:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/grey/Documentos/GitHub/proy-fireye-ros2/src/build/proy_fireye -- -j22 -l22
+[1.185s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/grey/Documentos/GitHub/proy-fireye-ros2/src/build/proy_fireye': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/grey/turtlebot3_ws/install/show_msg:/home/grey/turtlebot3_ws/install/my_first_subscriber:/home/grey/turtlebot3_ws/install/my_first_service:/home/grey/turtlebot3_ws/install/my_first_publisher:/home/grey/turtlebot3_ws/install/my_first_node:/home/grey/turtlebot3_ws/install/my_first_action:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/grey/Documentos/GitHub/proy-fireye-ros2/src/build/proy_fireye
+[1.198s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(proy_fireye)
+[1.199s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/grey/Documentos/GitHub/proy-fireye-ros2/src/build/proy_fireye' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/grey/turtlebot3_ws/install/show_msg:/home/grey/turtlebot3_ws/install/my_first_subscriber:/home/grey/turtlebot3_ws/install/my_first_service:/home/grey/turtlebot3_ws/install/my_first_publisher:/home/grey/turtlebot3_ws/install/my_first_node:/home/grey/turtlebot3_ws/install/my_first_action:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/grey/Documentos/GitHub/proy-fireye-ros2/src/build/proy_fireye
+[1.202s] Level 1:colcon.colcon_core.environment:checking '/home/grey/Documentos/GitHub/proy-fireye-ros2/src/install/proy_fireye' for CMake module files
+[1.203s] Level 1:colcon.colcon_core.environment:checking '/home/grey/Documentos/GitHub/proy-fireye-ros2/src/install/proy_fireye' for CMake config files
+[1.203s] Level 1:colcon.colcon_core.shell:create_environment_hook('proy_fireye', 'cmake_prefix_path')
+[1.204s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/grey/Documentos/GitHub/proy-fireye-ros2/src/install/proy_fireye/share/proy_fireye/hook/cmake_prefix_path.dsv'
+[1.204s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/grey/Documentos/GitHub/proy-fireye-ros2/src/install/proy_fireye/share/proy_fireye/hook/cmake_prefix_path.sh'
+[1.206s] Level 1:colcon.colcon_core.environment:checking '/home/grey/Documentos/GitHub/proy-fireye-ros2/src/install/proy_fireye/bin'
+[1.206s] Level 1:colcon.colcon_core.environment:checking '/home/grey/Documentos/GitHub/proy-fireye-ros2/src/install/proy_fireye/lib/pkgconfig/proy_fireye.pc'
+[1.209s] Level 1:colcon.colcon_core.environment:checking '/home/grey/Documentos/GitHub/proy-fireye-ros2/src/install/proy_fireye/lib/python3.12/site-packages'
+[1.210s] Level 1:colcon.colcon_core.environment:checking '/home/grey/Documentos/GitHub/proy-fireye-ros2/src/install/proy_fireye/bin'
+[1.210s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/grey/Documentos/GitHub/proy-fireye-ros2/src/install/proy_fireye/share/proy_fireye/package.dsv'
+[1.211s] INFO:colcon.colcon_core.shell:Creating package script '/home/grey/Documentos/GitHub/proy-fireye-ros2/src/install/proy_fireye/share/proy_fireye/package.sh'
+[1.212s] INFO:colcon.colcon_core.shell:Creating package script '/home/grey/Documentos/GitHub/proy-fireye-ros2/src/install/proy_fireye/share/proy_fireye/package.bash'
+[1.212s] INFO:colcon.colcon_core.shell:Creating package script '/home/grey/Documentos/GitHub/proy-fireye-ros2/src/install/proy_fireye/share/proy_fireye/package.zsh'
+[1.213s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/grey/Documentos/GitHub/proy-fireye-ros2/src/install/proy_fireye/share/colcon-core/packages/proy_fireye)
+[1.213s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(proy_fireye)
+[1.214s] Level 1:colcon.colcon_core.environment:checking '/home/grey/Documentos/GitHub/proy-fireye-ros2/src/install/proy_fireye' for CMake module files
+[1.214s] Level 1:colcon.colcon_core.environment:checking '/home/grey/Documentos/GitHub/proy-fireye-ros2/src/install/proy_fireye' for CMake config files
+[1.214s] Level 1:colcon.colcon_core.shell:create_environment_hook('proy_fireye', 'cmake_prefix_path')
+[1.215s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/grey/Documentos/GitHub/proy-fireye-ros2/src/install/proy_fireye/share/proy_fireye/hook/cmake_prefix_path.dsv'
+[1.215s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/grey/Documentos/GitHub/proy-fireye-ros2/src/install/proy_fireye/share/proy_fireye/hook/cmake_prefix_path.sh'
+[1.216s] Level 1:colcon.colcon_core.environment:checking '/home/grey/Documentos/GitHub/proy-fireye-ros2/src/install/proy_fireye/bin'
+[1.216s] Level 1:colcon.colcon_core.environment:checking '/home/grey/Documentos/GitHub/proy-fireye-ros2/src/install/proy_fireye/lib/pkgconfig/proy_fireye.pc'
+[1.216s] Level 1:colcon.colcon_core.environment:checking '/home/grey/Documentos/GitHub/proy-fireye-ros2/src/install/proy_fireye/lib/python3.12/site-packages'
+[1.216s] Level 1:colcon.colcon_core.environment:checking '/home/grey/Documentos/GitHub/proy-fireye-ros2/src/install/proy_fireye/bin'
+[1.217s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/grey/Documentos/GitHub/proy-fireye-ros2/src/install/proy_fireye/share/proy_fireye/package.dsv'
+[1.217s] INFO:colcon.colcon_core.shell:Creating package script '/home/grey/Documentos/GitHub/proy-fireye-ros2/src/install/proy_fireye/share/proy_fireye/package.sh'
+[1.218s] INFO:colcon.colcon_core.shell:Creating package script '/home/grey/Documentos/GitHub/proy-fireye-ros2/src/install/proy_fireye/share/proy_fireye/package.bash'
+[1.218s] INFO:colcon.colcon_core.shell:Creating package script '/home/grey/Documentos/GitHub/proy-fireye-ros2/src/install/proy_fireye/share/proy_fireye/package.zsh'
+[1.218s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/grey/Documentos/GitHub/proy-fireye-ros2/src/install/proy_fireye/share/colcon-core/packages/proy_fireye)
+[3.697s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/grey/Documentos/GitHub/proy-fireye-ros2/src/build/fireye_world' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/grey/turtlebot3_ws/install/show_msg:/home/grey/turtlebot3_ws/install/my_first_subscriber:/home/grey/turtlebot3_ws/install/my_first_service:/home/grey/turtlebot3_ws/install/my_first_publisher:/home/grey/turtlebot3_ws/install/my_first_node:/home/grey/turtlebot3_ws/install/my_first_action:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/grey/Documentos/GitHub/proy-fireye-ros2/src/proy-fireye_world -DCMAKE_INSTALL_PREFIX=/home/grey/Documentos/GitHub/proy-fireye-ros2/src/install/fireye_world
+[3.698s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/grey/Documentos/GitHub/proy-fireye-ros2/src/build/fireye_world': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/grey/turtlebot3_ws/install/show_msg:/home/grey/turtlebot3_ws/install/my_first_subscriber:/home/grey/turtlebot3_ws/install/my_first_service:/home/grey/turtlebot3_ws/install/my_first_publisher:/home/grey/turtlebot3_ws/install/my_first_node:/home/grey/turtlebot3_ws/install/my_first_action:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/grey/Documentos/GitHub/proy-fireye-ros2/src/build/fireye_world -- -j22 -l22
+[12.943s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/grey/Documentos/GitHub/proy-fireye-ros2/src/build/fireye_world' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/grey/turtlebot3_ws/install/show_msg:/home/grey/turtlebot3_ws/install/my_first_subscriber:/home/grey/turtlebot3_ws/install/my_first_service:/home/grey/turtlebot3_ws/install/my_first_publisher:/home/grey/turtlebot3_ws/install/my_first_node:/home/grey/turtlebot3_ws/install/my_first_action:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/grey/Documentos/GitHub/proy-fireye-ros2/src/build/fireye_world -- -j22 -l22
+[12.946s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/grey/Documentos/GitHub/proy-fireye-ros2/src/build/fireye_world': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/grey/turtlebot3_ws/install/show_msg:/home/grey/turtlebot3_ws/install/my_first_subscriber:/home/grey/turtlebot3_ws/install/my_first_service:/home/grey/turtlebot3_ws/install/my_first_publisher:/home/grey/turtlebot3_ws/install/my_first_node:/home/grey/turtlebot3_ws/install/my_first_action:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/grey/Documentos/GitHub/proy-fireye-ros2/src/build/fireye_world
+[13.002s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(fireye_world)
+[13.003s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/grey/Documentos/GitHub/proy-fireye-ros2/src/build/fireye_world' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/grey/turtlebot3_ws/install/show_msg:/home/grey/turtlebot3_ws/install/my_first_subscriber:/home/grey/turtlebot3_ws/install/my_first_service:/home/grey/turtlebot3_ws/install/my_first_publisher:/home/grey/turtlebot3_ws/install/my_first_node:/home/grey/turtlebot3_ws/install/my_first_action:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/grey/Documentos/GitHub/proy-fireye-ros2/src/build/fireye_world
+[13.003s] Level 1:colcon.colcon_core.environment:checking '/home/grey/Documentos/GitHub/proy-fireye-ros2/src/install/fireye_world' for CMake module files
+[13.004s] Level 1:colcon.colcon_core.environment:checking '/home/grey/Documentos/GitHub/proy-fireye-ros2/src/install/fireye_world' for CMake config files
+[13.004s] Level 1:colcon.colcon_core.shell:create_environment_hook('fireye_world', 'cmake_prefix_path')
+[13.004s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/grey/Documentos/GitHub/proy-fireye-ros2/src/install/fireye_world/share/fireye_world/hook/cmake_prefix_path.dsv'
+[13.005s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/grey/Documentos/GitHub/proy-fireye-ros2/src/install/fireye_world/share/fireye_world/hook/cmake_prefix_path.sh'
+[13.006s] Level 1:colcon.colcon_core.environment:checking '/home/grey/Documentos/GitHub/proy-fireye-ros2/src/install/fireye_world/lib'
+[13.006s] Level 1:colcon.colcon_core.environment:checking '/home/grey/Documentos/GitHub/proy-fireye-ros2/src/install/fireye_world/bin'
+[13.006s] Level 1:colcon.colcon_core.environment:checking '/home/grey/Documentos/GitHub/proy-fireye-ros2/src/install/fireye_world/lib/pkgconfig/fireye_world.pc'
+[13.006s] Level 1:colcon.colcon_core.environment:checking '/home/grey/Documentos/GitHub/proy-fireye-ros2/src/install/fireye_world/lib/python3.12/site-packages'
+[13.007s] Level 1:colcon.colcon_core.environment:checking '/home/grey/Documentos/GitHub/proy-fireye-ros2/src/install/fireye_world/bin'
+[13.007s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/grey/Documentos/GitHub/proy-fireye-ros2/src/install/fireye_world/share/fireye_world/package.dsv'
+[13.008s] INFO:colcon.colcon_core.shell:Creating package script '/home/grey/Documentos/GitHub/proy-fireye-ros2/src/install/fireye_world/share/fireye_world/package.sh'
+[13.008s] INFO:colcon.colcon_core.shell:Creating package script '/home/grey/Documentos/GitHub/proy-fireye-ros2/src/install/fireye_world/share/fireye_world/package.bash'
+[13.009s] INFO:colcon.colcon_core.shell:Creating package script '/home/grey/Documentos/GitHub/proy-fireye-ros2/src/install/fireye_world/share/fireye_world/package.zsh'
+[13.009s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/grey/Documentos/GitHub/proy-fireye-ros2/src/install/fireye_world/share/colcon-core/packages/fireye_world)
+[13.010s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(fireye_world)
+[13.010s] Level 1:colcon.colcon_core.environment:checking '/home/grey/Documentos/GitHub/proy-fireye-ros2/src/install/fireye_world' for CMake module files
+[13.011s] Level 1:colcon.colcon_core.environment:checking '/home/grey/Documentos/GitHub/proy-fireye-ros2/src/install/fireye_world' for CMake config files
+[13.011s] Level 1:colcon.colcon_core.shell:create_environment_hook('fireye_world', 'cmake_prefix_path')
+[13.011s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/grey/Documentos/GitHub/proy-fireye-ros2/src/install/fireye_world/share/fireye_world/hook/cmake_prefix_path.dsv'
+[13.012s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/grey/Documentos/GitHub/proy-fireye-ros2/src/install/fireye_world/share/fireye_world/hook/cmake_prefix_path.sh'
+[13.012s] Level 1:colcon.colcon_core.environment:checking '/home/grey/Documentos/GitHub/proy-fireye-ros2/src/install/fireye_world/lib'
+[13.012s] Level 1:colcon.colcon_core.environment:checking '/home/grey/Documentos/GitHub/proy-fireye-ros2/src/install/fireye_world/bin'
+[13.012s] Level 1:colcon.colcon_core.environment:checking '/home/grey/Documentos/GitHub/proy-fireye-ros2/src/install/fireye_world/lib/pkgconfig/fireye_world.pc'
+[13.013s] Level 1:colcon.colcon_core.environment:checking '/home/grey/Documentos/GitHub/proy-fireye-ros2/src/install/fireye_world/lib/python3.12/site-packages'
+[13.013s] Level 1:colcon.colcon_core.environment:checking '/home/grey/Documentos/GitHub/proy-fireye-ros2/src/install/fireye_world/bin'
+[13.013s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/grey/Documentos/GitHub/proy-fireye-ros2/src/install/fireye_world/share/fireye_world/package.dsv'
+[13.014s] INFO:colcon.colcon_core.shell:Creating package script '/home/grey/Documentos/GitHub/proy-fireye-ros2/src/install/fireye_world/share/fireye_world/package.sh'
+[13.014s] INFO:colcon.colcon_core.shell:Creating package script '/home/grey/Documentos/GitHub/proy-fireye-ros2/src/install/fireye_world/share/fireye_world/package.bash'
+[13.015s] INFO:colcon.colcon_core.shell:Creating package script '/home/grey/Documentos/GitHub/proy-fireye-ros2/src/install/fireye_world/share/fireye_world/package.zsh'
+[13.015s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/grey/Documentos/GitHub/proy-fireye-ros2/src/install/fireye_world/share/colcon-core/packages/fireye_world)
+[13.015s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[13.016s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[13.016s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[13.016s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[13.026s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[13.026s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[13.026s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[13.049s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[13.049s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/grey/Documentos/GitHub/proy-fireye-ros2/src/install/local_setup.sh'
+[13.050s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/grey/Documentos/GitHub/proy-fireye-ros2/src/install/_local_setup_util_sh.py'
+[13.051s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/grey/Documentos/GitHub/proy-fireye-ros2/src/install/setup.sh'
+[13.053s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/grey/Documentos/GitHub/proy-fireye-ros2/src/install/local_setup.bash'
+[13.053s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/grey/Documentos/GitHub/proy-fireye-ros2/src/install/setup.bash'
+[13.055s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/grey/Documentos/GitHub/proy-fireye-ros2/src/install/local_setup.zsh'
+[13.055s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/grey/Documentos/GitHub/proy-fireye-ros2/src/install/setup.zsh'
