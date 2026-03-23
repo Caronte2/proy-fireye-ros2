@@ -1,0 +1,32 @@
+# Build ROS2
+build/
+install/
+log/
+
+# Colcon
+.colcon/
+
+# Archivos temporales
+*.log
+*.tmp
+*.swp
+
+# Python
+__pycache__/
+*.pyc
+
+# VSCode
+.vscode/
+
+# Ubuntu / Linux
+*~
+
+# GitHub Desktop
+.DS_Store
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+
+# Otros
+*.bak
