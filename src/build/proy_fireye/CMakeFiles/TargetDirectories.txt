@@ -1,9 +1,0 @@
-/home/grey/Documentos/GitHub/proy-fireye-ros2/src/build/proy_fireye/CMakeFiles/uninstall.dir
-/home/grey/Documentos/GitHub/proy-fireye-ros2/src/build/proy_fireye/CMakeFiles/proy_fireye_uninstall.dir
-/home/grey/Documentos/GitHub/proy-fireye-ros2/src/build/proy_fireye/CMakeFiles/test.dir
-/home/grey/Documentos/GitHub/proy-fireye-ros2/src/build/proy_fireye/CMakeFiles/edit_cache.dir
-/home/grey/Documentos/GitHub/proy-fireye-ros2/src/build/proy_fireye/CMakeFiles/rebuild_cache.dir
-/home/grey/Documentos/GitHub/proy-fireye-ros2/src/build/proy_fireye/CMakeFiles/list_install_components.dir
-/home/grey/Documentos/GitHub/proy-fireye-ros2/src/build/proy_fireye/CMakeFiles/install.dir
-/home/grey/Documentos/GitHub/proy-fireye-ros2/src/build/proy_fireye/CMakeFiles/install/local.dir
-/home/grey/Documentos/GitHub/proy-fireye-ros2/src/build/proy_fireye/CMakeFiles/install/strip.dir
