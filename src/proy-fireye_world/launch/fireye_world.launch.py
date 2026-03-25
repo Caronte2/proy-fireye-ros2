@@ -7,7 +7,7 @@ from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch.substitutions import LaunchConfiguration
 
 def generate_launch_description():
-    launch_file_dir = os.path.join(get_package_share_directory('fireye_world'), 'launch')
+    launch_file_dir = os.path.join(get_package_share_directory('proy_fireye_world'), 'launch')
     ros_gz_sim = get_package_share_directory('ros_gz_sim')
 
     use_sim_time = LaunchConfiguration('use_sim_time', default='true')
@@ -15,7 +15,7 @@ def generate_launch_description():
     y_pose = LaunchConfiguration('y_pose', default='8.0')
 
     world = os.path.join(
-        get_package_share_directory('fireye_world'),
+        get_package_share_directory('proy_fireye_world'),
         'worlds',
         'harmonic.sdf'
     )
