@@ -9,4 +9,9 @@ endif()
 # Find dependencies
 find_package(ament_cmake REQUIRED)
 
+install(PROGRAMS
+  scripts/danger_zone_detector.py
+  DESTINATION lib/${PROJECT_NAME}
+)
+
 ament_package()

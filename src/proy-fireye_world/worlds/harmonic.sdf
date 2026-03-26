@@ -327,5 +327,56 @@
     </include>
    
 
+    <model name="zona_critica_fuego">
+      <static>true</static>
+      <pose>1 0 1.5 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>3 3 3</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>1 0 0 1</ambient>
+            <diffuse>1 0 0 1</diffuse>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>3 3 3</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="zona_critica_gas">
+      <static>true</static>
+      <pose>-5 -5 6.0 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <cylinder>
+              <radius>1.0</radius>
+              <length>1.2</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>0 1 0 0.7</ambient>
+            <diffuse>0 1 0 0.7</diffuse>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <cylinder>
+              <radius>1.0</radius>
+              <length>1.2</length>
+            </cylinder>
+          </geometry>
+        </collision>
+      </link>
+    </model>
   </world>
 </sdf>
