@@ -58,5 +58,29 @@
         <pose>0.0 0.0 -0.2 0 0 1.57</pose>
       </include>
     </model>
+<model name="zona_critica_fuego">
+  <static>true</static>
+  <pose>2 0 0.25 0 0 0</pose>
+  <link name="link">
+    <visual name="visual">
+      <geometry>
+        <box>
+          <size>1 1 0.5</size>
+        </box>
+      </geometry>
+      <material>
+        <ambient>1 0 0 1</ambient>
+        <diffuse>1 0 0 1</diffuse>
+      </material>
+    </visual>
+    <collision name="collision">
+      <geometry>
+        <box>
+          <size>1 1 0.5</size>
+        </box>
+      </geometry>
+    </collision>
+  </link>
+</model>
   </world>
 </sdf>
