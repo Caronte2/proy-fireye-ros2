@@ -1,0 +1,28 @@
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Class: rviz_default_plugins/Grid
+      Enabled: true
+      Name: Grid
+    - Class: rviz_default_plugins/Map
+      Enabled: true
+      Name: Map
+      Topic: /map
+      Durability Policy: Transient Local
+    - Class: rviz_default_plugins/RobotModel
+      Enabled: true
+      Name: RobotModel
+      Description Source: Topic
+      Description Topic: /robot_description
+    - Class: rviz_default_plugins/LaserScan
+      Enabled: true
+      Name: LaserScan
+      Topic: /scan
+      Size (Pixels): 3
+    - Class: rviz_default_plugins/PoseArray
+      Enabled: true
+      Name: Particulas_AMCL
+      Topic: /particlecloud
+  Global Options:
+    Fixed Frame: map
+    Background Color: 48; 48; 48
