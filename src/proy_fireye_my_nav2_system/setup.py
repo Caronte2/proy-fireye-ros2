@@ -17,7 +17,8 @@ setup(
         (os.path.join('share', package_name, 'param'), glob('param/*.yaml')),
         (os.path.join('share', package_name, 'rviz'), glob('rviz/*.rviz')),
         (os.path.join('share', package_name, 'map'), glob('map/*.pgm')),
-        (os.path.join('share', package_name, 'map'), glob('map/*.yaml'))
+        (os.path.join('share', package_name, 'map'), glob('map/*.yaml')),
+        (os.path.join('share', package_name, 'test'), glob('test/*.py'))
     ],
     install_requires=['setuptools'],
     zip_safe=True,
