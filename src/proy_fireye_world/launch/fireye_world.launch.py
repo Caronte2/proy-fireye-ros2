@@ -26,16 +26,11 @@ def generate_launch_description():
         ),
         launch_arguments={
             'gz_args': ['-r -s -v2 ', world],
-            'on_exit_shutdown': 'true'
+            'on_exit_shutdown': 'false'
         }.items()
     )
 
-    gzclient_cmd = IncludeLaunchDescription(
-        PythonLaunchDescriptionSource(
-            os.path.join(ros_gz_sim, 'launch', 'gz_sim.launch.py')
-        ),
-        launch_arguments={'gz_args': '-g -v2 ', 'on_exit_shutdown': 'true'}.items()
-    )
+
 
     gzclient_cmd = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
@@ -64,15 +59,16 @@ def generate_launch_description():
     set_env_vars_resources = AppendEnvironmentVariable(
         'GZ_SIM_RESOURCE_PATH',
         os.path.join(
-            get_package_share_directory('my_world'),
+            get_package_share_directory('proy_fireye_world'),
             'models'))
 
     ld = LaunchDescription()
 
+    ld.add_action(set_env_vars_resources)
     ld.add_action(gzserver_cmd)
     ld.add_action(gzclient_cmd)
     ld.add_action(spawn_turtlebot_cmd)
     ld.add_action(robot_state_publisher_cmd)
-    ld.add_action(set_env_vars_resources)
+    
 
     return ld

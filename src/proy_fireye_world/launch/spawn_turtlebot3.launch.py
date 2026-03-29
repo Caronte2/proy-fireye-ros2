@@ -26,7 +26,7 @@ def generate_launch_description():
     TURTLEBOT3_MODEL = os.environ['TURTLEBOT3_MODEL']
     model_folder = 'turtlebot3_' + TURTLEBOT3_MODEL
     urdf_path = os.path.join(
-        get_package_share_directory('fireye_world'),
+        get_package_share_directory('proy_fireye_world'),
         'models',
         model_folder,
         'model.sdf'
@@ -53,13 +53,13 @@ def generate_launch_description():
             '-file', urdf_path,
             '-x', x_pose,
             '-y', y_pose,
-            '-z', '7.0'
+            '-z', '0.1'
         ],
         output='screen',
     )
 
     bridge_params = os.path.join(
-        get_package_share_directory('fireye_world'),
+        get_package_share_directory('proy_fireye_world'),
         'params',
         model_folder+'_bridge.yaml'
     )
