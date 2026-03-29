@@ -62,15 +62,8 @@
       <uri>https://fuel.gazebosim.org/1.0/OpenRobotics/models/Lake%20House</uri>
       <pose>0 0 0 0 0 0</pose>
     </include>
-    <include>
-      <name>Water</name>
-      <uri>https://fuel.gazebosim.org/1.0/OpenRobotics/models/Coast%20Waves%202</uri>
-      <pose>0 0 0 0 0 0</pose>
-    </include>
-    <include>
-      <name>Terrain</name>
-      <uri>https://fuel.gazebosim.org/1.0/OpenRobotics/models/Harmonic%20Terrain</uri>
-    </include>
+    
+    
 
     <!-- Árboles -->
     <include>
@@ -86,12 +79,12 @@
     <include>
       <name>Roble_1</name>
       <uri>https://fuel.gazebosim.org/1.0/OpenRobotics/models/Oak%20tree</uri>
-      <pose>10 -15 7.32 0 0 0</pose>
+      <pose>10 -15 6.5 0 0 0</pose>
     </include>
     <include>
       <name>Roble_2</name>
       <uri>https://fuel.gazebosim.org/1.0/OpenRobotics/models/Oak%20tree</uri>
-      <pose>-15 12 5.18 0 0 0</pose>
+      <pose>-15 12 6.16 0 0 0</pose>
     </include>
 
     <!-- Zonas críticas -->
@@ -140,7 +133,7 @@
     <!-- PLANO INVISIBLE PARA QUE EL ROBOT PUEDA PASAR -->
     <model name="plano_seguro">
       <static>true</static>
-      <pose>0 0 7 0 0 0</pose>
+      <pose>0 0 6.5 0 0 0</pose>
       <link name="link">
         <collision name="collision">
           <geometry>
@@ -166,8 +159,8 @@
             </plane>
           </geometry>
           <material>
-              <ambient>0 1 0 0.3</ambient>
-              <diffuse>0 1 0 0.3</diffuse>
+            <ambient>0 1 0 1</ambient>
+            <diffuse>0 1 0 1</diffuse>
           </material>
         </visual>
       </link>
