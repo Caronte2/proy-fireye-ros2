@@ -1,145 +1,48 @@
 <?xml version="1.0" ?>
 <sdf version="1.9">
-  <world name="harmonic">
+  <world name="fireye_nav_world">
 
-    <!-- GUI y plugins (sin cambios) -->
-    <gui fullscreen="0">
-      <!-- ... (todos tus plugins actuales permanecen igual) ... -->
-    </gui>
-
+    <!-- Física -->
     <physics name="1ms" type="ignored">
-      <dart>
-        <collision_detector>bullet</collision_detector>
-      </dart>
       <max_step_size>0.001</max_step_size>
       <real_time_factor>1.0</real_time_factor>
     </physics>
-    <plugin filename="gz-sim-physics-system" name="gz::sim::systems::Physics"></plugin>
+
+    <plugin filename="gz-sim-physics-system" name="gz::sim::systems::Physics"/>
     <plugin filename="gz-sim-sensors-system" name="gz::sim::systems::Sensors">
       <render_engine>ogre2</render_engine>
     </plugin>
-    <plugin filename="gz-sim-user-commands-system" name="gz::sim::systems::UserCommands"></plugin>
-    <plugin filename="gz-sim-scene-broadcaster-system" name="gz::sim::systems::SceneBroadcaster"></plugin>
-    
+    <plugin filename="gz-sim-user-commands-system" name="gz::sim::systems::UserCommands"/>
+    <plugin filename="gz-sim-scene-broadcaster-system" name="gz::sim::systems::SceneBroadcaster"/>
+
+    <!-- Gravedad -->
     <gravity>0 0 -9.8</gravity>
+
+    <!-- Escena -->
     <scene>
       <ambient>1 1 1</ambient>
       <grid>false</grid>
-      <sky></sky>
     </scene>
 
-    <!-- Luces (sin cambios) -->
+    <!-- Luz -->
     <light type="directional" name="sun">
-      <cast_shadows>true</cast_shadows>
-      <pose>0 0 20 -1.3 0 0.5</pose>
+      <pose>0 0 20 0 0 0</pose>
       <diffuse>0.8 0.8 0.8 1</diffuse>
       <specular>0.01 0.01 0.01 1</specular>
       <intensity>2</intensity>
-      <visualize>false</visualize>
-    </light>
-    <light type="point" name="point_light">
-      <pose>0.73 0.09 8.77 0 0 0</pose>
-      <diffuse>1 1 1 1</diffuse>
-      <specular>.01 .01 .01 1</specular>
-      <attenuation>
-        <range>20</range>
-        <linear>0.2</linear>
-        <constant>0.8</constant>
-        <quadratic>0.01</quadratic>
-      </attenuation>
-      <cast_shadows>true</cast_shadows>
-      <visualize>false</visualize>
     </light>
 
-    <!-- Modelos existentes -->
-    <include>
-      <pose>0 0 0 0 0 2.6</pose>
-      <name>Sky</name>
-      <uri>https://fuel.gazebosim.org/1.0/OpenRobotics/models/Sky</uri>
-    </include>
-    <include>
-      <name>Lake House</name>
-      <uri>https://fuel.gazebosim.org/1.0/OpenRobotics/models/Lake%20House</uri>
-      <pose>0 0 0 0 0 0</pose>
-    </include>
-    
-    
-
-    <!-- Árboles -->
-    <include>
-      <name>Pino_1</name>
-      <uri>https://fuel.gazebosim.org/1.0/OpenRobotics/models/Pine%20Tree</uri>
-      <pose>15 10 5.7 0 0 0</pose>
-    </include>
-    <include>
-      <name>Pino_2</name>
-      <uri>https://fuel.gazebosim.org/1.0/OpenRobotics/models/Pine%20Tree</uri>
-      <pose>-12 -8 5.7 0 0 0</pose>
-    </include>
-    <include>
-      <name>Roble_1</name>
-      <uri>https://fuel.gazebosim.org/1.0/OpenRobotics/models/Oak%20tree</uri>
-      <pose>10 -15 6.5 0 0 0</pose>
-    </include>
-    <include>
-      <name>Roble_2</name>
-      <uri>https://fuel.gazebosim.org/1.0/OpenRobotics/models/Oak%20tree</uri>
-      <pose>-15 12 6.16 0 0 0</pose>
-    </include>
-
-    <!-- Zonas críticas -->
-    <model name="zona_critica_fuego">
+    <!-- SUELO PERFECTO PARA NAV2 -->
+    <model name="ground_plane">
       <static>true</static>
-      <pose>1 0 1.5 0 0 0</pose>
       <link name="link">
-        <visual name="visual">
-          <geometry>
-            <box><size>3 3 3</size></box>
-          </geometry>
-          <material>
-            <ambient>1 0 0 1</ambient>
-            <diffuse>1 0 0 1</diffuse>
-          </material>
-        </visual>
-        <collision name="collision">
-          <geometry>
-            <box><size>3 3 3</size></box>
-          </geometry>
-        </collision>
-      </link>
-    </model>
 
-    <model name="zona_critica_gas">
-      <static>true</static>
-      <pose>-5 -5 6.0 0 0 0</pose>
-      <link name="link">
-        <visual name="visual">
-          <geometry>
-            <cylinder><radius>1.0</radius><length>1.2</length></cylinder>
-          </geometry>
-          <material>
-            <ambient>0 1 0 0.7</ambient>
-            <diffuse>0 1 0 0.7</diffuse>
-          </material>
-        </visual>
-        <collision name="collision">
-          <geometry>
-            <cylinder><radius>1.0</radius><length>1.2</length></cylinder>
-          </geometry>
-        </collision>
-      </link>
-    </model>
-
-    <!-- PLANO INVISIBLE PARA QUE EL ROBOT PUEDA PASAR -->
-    <model name="plano_seguro">
-      <static>true</static>
-      <pose>0 0 6.5 0 0 0</pose>
-      <link name="link">
+        <!-- COLISIÓN (IMPORTANTE) -->
         <collision name="collision">
           <geometry>
             <plane>
               <normal>0 0 1</normal>
-              <size>50 50</size>
+              <size>100 100</size>
             </plane>
           </geometry>
           <surface>
@@ -151,16 +54,94 @@
             </friction>
           </surface>
         </collision>
+
+        <!-- VISUAL (VERDE SUAVE) -->
         <visual name="visual">
           <geometry>
             <plane>
               <normal>0 0 1</normal>
-              <size>50 50</size>
+              <size>100 100</size>
             </plane>
           </geometry>
           <material>
-            <ambient>0 1 0 1</ambient>
-            <diffuse>0 1 0 1</diffuse>
+            <ambient>0.3 0.7 0.3 1</ambient>
+            <diffuse>0.3 0.7 0.3 1</diffuse>
+          </material>
+        </visual>
+
+      </link>
+    </model>
+
+    <!-- CASA -->
+    <include>
+      <name>house</name>
+      <uri>https://fuel.gazebosim.org/1.0/OpenRobotics/models/Lake%20House</uri>
+      <pose>0 0 -6.7 0 0 0</pose>
+    </include>
+
+    <!-- ÁRBOLES -->
+    <include>
+      <name>tree1</name>
+      <uri>https://fuel.gazebosim.org/1.0/OpenRobotics/models/Pine%20Tree</uri>
+      <pose>8 8 0 0 0 0</pose>
+    </include>
+
+    <include>
+      <name>tree2</name>
+      <uri>https://fuel.gazebosim.org/1.0/OpenRobotics/models/Pine%20Tree</uri>
+      <pose>-6 -6 0 0 0 0</pose>
+    </include>
+
+    <include>
+      <name>tree3</name>
+      <uri>https://fuel.gazebosim.org/1.0/OpenRobotics/models/Oak%20tree</uri>
+      <pose>10 -5 0 0 0 0</pose>
+    </include>
+
+    <include>
+      <name>tree4</name>
+      <uri>https://fuel.gazebosim.org/1.0/OpenRobotics/models/Oak%20tree</uri>
+      <pose>-8 5 0 0 0 0</pose>
+    </include>
+
+    <!-- OBSTÁCULOS PARA NAV2 -->
+    <model name="obstacle1">
+      <static>true</static>
+      <pose>2 2 0.5 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box><size>1 1 1</size></box>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box><size>1 1 1</size></box>
+          </geometry>
+          <material>
+            <ambient>1 0 0 1</ambient>
+            <diffuse>1 0 0 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="obstacle2">
+      <static>true</static>
+      <pose>-3 1 0.5 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box><size>1 1 1</size></box>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box><size>1 1 1</size></box>
+          </geometry>
+          <material>
+            <ambient>0 0 1 1</ambient>
+            <diffuse>0 0 1 1</diffuse>
           </material>
         </visual>
       </link>

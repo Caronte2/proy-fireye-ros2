@@ -1,13 +1,14 @@
+from setuptools import find_packages, setup
 import os
 from glob import glob
-from setuptools import find_packages, setup
+
 
 package_name = 'proy_fireye_my_nav2_system'
 
 setup(
     name=package_name,
     version='0.0.0',
-    packages=[package_name],
+    packages=find_packages(exclude=['test']),
     data_files=[
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
@@ -22,10 +23,11 @@ setup(
     zip_safe=True,
     maintainer='grey',
     maintainer_email='122355310+GreysyBurgos@users.noreply.github.com',
-    description='TODO: Package description',
+    description='Navigation2 setup for Fireye',
     license='TODO: License declaration',
     entry_points={
         'console_scripts': [
+            'initial_pose_pub = proy_fireye_my_nav2_system.initial_pose_pub:main',
         ],
     },
 )
